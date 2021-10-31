@@ -5,8 +5,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #ffffff;
-  background-color: #07070e;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 a {
@@ -112,10 +112,14 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
+  /* padding: 20px 0; */
+  margin-top: -12px;
+  margin-right: 0;
 }
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(0, 0, 0, 0.8);
+  /* background: rgba(0, 0, 0, 0.8); */
+  background: url('../img/hero-bg.png') top center no-repeat;
+  background-size: cover;
   padding: 12px 0;
 }
 #header .logo {
@@ -142,6 +146,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 .navbar {
   padding: 0;
+  margin-left: 12rem !important;
 }
 .navbar ul {
   margin: 0;
@@ -152,9 +157,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar li {
   position: relative;
+  text-transform: uppercase;
 }
 .navbar > ul > li {
-  padding: 10px 0 10px 24px;
+  padding: 10px 24px 10px 24px;
 }
 .navbar a, .navbar a:focus {
   display: flex;
@@ -163,8 +169,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 3px;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
+
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -273,6 +280,8 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  margin-left: 18rem !important;
+  color: black;
 }
 
 @media (max-width: 991px) {
@@ -362,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, rgb(0 0 0 / 61%) 0%, rgb(213 185 185 / 54%) 100%), url("../img/hero-bg.png") center center no-repeat;
+  background: linear-gradient(45deg, rgba(255, 0, 0, 0.61) 0%, rgba(231, 5, 5, 0.541) 100%), url("../img/hero-bg.png") center center no-repeat;
   background-size: cover;
 }
 #hero .container, #hero .container-fluid {
@@ -464,6 +473,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-10px);
   }
 }
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -507,13 +517,15 @@ section {
 --------------------------------------------------------------*/
 .about {
   padding: 120px 0;
+  background: linear-gradient(red,black);
 }
 .about .content h3 {
   font-weight: 600;
   font-size: 32px;
-  color: #2c4964;
+  color: #030303;
 }
 .about .content ul {
+  font-size: 20px;
   list-style: none;
   padding: 0;
 }
@@ -523,7 +535,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #5846f9;
+  color: #ff0101;
 }
 .about .content p:last-child {
   margin-bottom: 0;
@@ -555,7 +567,7 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: linear-gradient(90deg, rgba(177, 23, 23, 0.5) 0%, rgba(13, 13, 14, 0.5) 100%), url("../img/counts-bg.png") center center no-repeat;
+  background: linear-gradient(90deg, rgba(88, 70, 249, 0.5) 0%, rgba(123, 39, 216, 0.5) 100%), url("../img/counts-bg.png") center center no-repeat;
   padding: 80px 0 60px 0;
 }
 .counts .counters span {
@@ -960,12 +972,12 @@ section {
   padding: 20px 15px;
   font-size: 16px;
   font-weight: 600;
-  color: #2c4964;
+  color: #274e5e;
   background: #f8f8f8;
 }
 .pricing h4 {
   font-size: 36px;
-  color: #5846f9;
+  color: #274e5e;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
@@ -983,7 +995,7 @@ section {
 .pricing ul {
   padding: 0;
   list-style: none;
-  color: #444444;
+  color: #274e5e;
   text-align: center;
   line-height: 20px;
   font-size: 14px;
@@ -992,7 +1004,7 @@ section {
   padding-bottom: 16px;
 }
 .pricing ul i {
-  color: #5846f9;
+  color: 274e5e;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1007,7 +1019,7 @@ section {
   text-align: center;
 }
 .pricing .btn-buy {
-  background: linear-gradient(42deg, #5846f9 0%, #7b27d8 100%);
+  background: linear-gradient(42deg, #274e5e 0%, #274e5e 100%);
   display: inline-block;
   padding: 10px 35px;
   border-radius: 4px;
@@ -1024,7 +1036,7 @@ section {
 }
 .pricing .featured h3 {
   color: #fff;
-  background: #5846f9;
+  background: #274e5e;
 }
 .pricing .advanced {
   width: 200px;
@@ -1035,7 +1047,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #5846f9;
+  background: #274e5e;
   color: #fff;
 }
 
@@ -1043,7 +1055,7 @@ section {
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq {
-  background: linear-gradient(42deg, #5846f9 0%, #7b27d8 100%);
+  background: linear-gradient(42deg, #466b72 0%, #396061 100%);
 }
 .faq .section-title h2, .faq .section-title p {
   color: #fff;
@@ -1119,14 +1131,10 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact {
-  background: linear-gradient(45deg,rgb(81, 68, 138),rgb(104, 44, 67) 100%);
-  background-size: cover;
-}
 .contact .info-box {
   color: #444444;
   text-align: center;
-  box-shadow: 0 0 30px ;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
   background: #fff;
 }
@@ -1149,7 +1157,7 @@ section {
   margin-bottom: 0;
 }
 .contact .php-email-form {
-  /* box-shadow: 0 0 30px rgba(214, 215, 216, 0.6); */
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
   background: #fff;
 }
@@ -1285,7 +1293,7 @@ section {
 #footer {
   color: #fff;
   font-size: 14px;
-  background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../img/hero-bg.jpg") center center no-repeat;
+  background: linear-gradient(45deg, #274e5e 0%, #274e5e 100%), url("../img/hero-bg.jpg") center center no-repeat;
   background-size: cover;
 }
 #footer .footer-top {
@@ -1379,20 +1387,19 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: rgba(123, 39, 216, 0.8);
+  background: #274e5e;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 5px 5px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #5846f9;
+  background: #274e5e;
 }
 #footer .copyright-wrap {
-  border-top: 1px solid #8577fb;
+  border-top: 1px solid #274e5e;
 }
 #footer .credits {
-
   padding-top: 5px;
   font-size: 13px;
   color: #fff;
@@ -1403,7 +1410,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: rgba(255, 255, 255, 0.1);
+  background: #274e5e;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1415,7 +1422,7 @@ section {
   transition: 0.3s;
 }
 #footer .social-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: #274e5e;
   color: #fff;
   text-decoration: none;
 }
